@@ -1,10 +1,5 @@
 # RandomIdeas App
-
-This is a fullstack application for sharing random ideas. It is a project in my **Modern JS From The Beginning** course.
-
-This app includes a Node.js/Express REST API that uses MongoDB for a database. The client-side is built with Webpack.
-
-<img src="assets/screen.png">
+![screen](https://github.com/user-attachments/assets/361fded6-1b6d-4f09-b764-113ee96fc6dd)
 
 ## Usage
 
@@ -57,20 +52,6 @@ Rename `.env-example` to `.env` and add your MongoDB URI to the `.env` file.
 ```
 MONGO_URI=your_mongodb_uri
 ```
-
-## REST Endpoints
-
-### Ideas
-
-| Endpoint       | Description    | Method | Body                    |
-| -------------- | -------------- | ------ | ----------------------- |
-| /api/ideas     | Get all ideas  | GET    | None                    |
-| /api/ideas/:id | Get idea by id | GET    | None                    |
-| /api/ideas     | Add idea       | POST   | { text, tag, username } |
-| /api/ideas/:id | Update idea    | PUT    | { text, tag, username } |
-| /api/ideas/:id | Delete idea    | DELETE | username                |
-
-When updating or deleting, the username must match the username of the idea creator.
 
 ### Notable Code For Reference
 - Full stack file structure
